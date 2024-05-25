@@ -1,11 +1,7 @@
-import java.util.Scanner;
+class BinaryTree {
+    Node root;
 
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int item) {
-        data = item;
-        left = right = null;
+    boolean isBST() {
+        return isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 }
