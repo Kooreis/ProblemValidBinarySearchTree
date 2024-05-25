@@ -1,8 +1,6 @@
-using System;
-
-public class Node
+public Node(int value, Node left = null, Node right = null)
 {
-    public int Value;
-    public Node Left;
-    public Node Right;
+    Value = value;
+    Left = left;
+    Right = right;
 }
